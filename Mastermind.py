@@ -121,16 +121,19 @@ while PlayAgain == True:
         if TotalNum == 8:
             CorNum = 0
        
-        #These print statements are after the calculations and tell the player how close they were to mystery number the 4 different if statements are for grammar reasons
-        if CorNum == 1 and CorPos > 1 or CorPos == 0:
-            print("You have ", CorNum, " correct number and ", CorPos, " are in the correct position")
-        if CorNum > 1 or CorNum == 0 and CorPos > 1 or CorPos == 0:
-            print("You have ", CorNum, " correct numbers and ", CorPos, " are in the correct position")
-        if CorNum == 1 and CorPos == 1:
-            print("You have ", CorNum, " correct number and ", CorPos, " is in the correct position")
-        if CorNum > 1 or CorNum == 0 and CorPos == 1:
-            print("You have ", CorNum, " correct numbers and ", CorPos, " is in the correct position")
+        #These print statements are after the calculations and tell the player how close they were to mystery number the if statements are for grammar purposes
+            print("You have ", CorNum, " correct")
 
+            if CorNum == 1:
+                print(" number")
+            if CorNum > 1 or CorNum == 0:
+                print(" numbers")
+            print(" and ", CorPos, )
+            if CorPos == 0:
+                print(" is")
+            if CorPos > 1 or CorPos == 0:
+                print(" are")
+            print(" in the correct position")
         #This equation makes the game countdown so that there is a way to loose
         RNumturns = RNumturns -1
         

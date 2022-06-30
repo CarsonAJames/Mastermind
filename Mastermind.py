@@ -33,24 +33,22 @@ while PlayAgain == True:
     #This is for storing the user input for later use
     RNumturns = int(Numturns)
     
-    #These 4 lists are the ranges of the 4 digits
+    #This list is the range of the 4 digits
     list1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    list2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    list3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-    list4 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+   
     
     #These 4 functions select a random number from the lists and then set them to variables
     rand1 = int(random.choice(list1))
-    rand2 = int(random.choice(list2))
-    rand3 = int(random.choice(list3))
-    rand4 = int(random.choice(list4))
+    rand2 = int(random.choice(list1))
+    rand3 = int(random.choice(list1))
+    rand4 = int(random.choice(list1))
     
     #This equation makes the mystery number to be used
     Mystery = int((rand1 * 1000) + (rand2 * 100) + (rand3 * 10) + rand4)
    
     #This is for making the mystery number is always for digits
     format(Mystery, "04")
-    #print(Mystery) Debugging
+    #print(Mystery)
     
     #This is the main game the loop continues until the RNumturns varaible is 0 or if the play wins by guessing the correct number
     while RNumturns > 0 and GameWon == False:

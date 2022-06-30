@@ -164,11 +164,11 @@ while PlayAgain == True:
         if Question > 1 or Question < 0:
             
             #This is for anyone who tries to input a different answer than the expected one
-            print("Please answer with 1 or 0")
-            Question = int(input("Would you like to play again?"))
+            print("Please answer with y or n")
+            Question = input("Would you like to play again?")
             
             #This is so the loop can break and the game can end
-            if Question == 0:
+            if Question == 'n':
                 PlayAgain = False
 
 #This print statment is for when to game ends it also helps to know that the program has gone through it also references how old aracade games would have a game over screen
